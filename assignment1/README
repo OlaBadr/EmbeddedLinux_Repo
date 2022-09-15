@@ -1,0 +1,11 @@
+COMPILATION STAGES:
+
+$ gcc olamain.c -o myoutput 
+$./myoutput
+
+NOTES:
+* those commands shall start the shell
+* to return to terminal just write "exit"
+* you can change the excutable file name as you wish 
+  example:
+  $ gcc olamain.c -o yourfilename
