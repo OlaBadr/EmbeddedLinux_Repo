@@ -1,0 +1,18 @@
+For static linking:
+
+/assinment2/staticlib$ gcc -c *.c
+/assinment2/staticlib$ ar -rs libmyfuncs.a *.o
+/assinment2/staticlib$ cd ..
+/assinment2$ gcc -c main.c
+/assinment2$ gcc main.o -o mystaticexe -lmyfuncs -L staticlib/
+/assinment2$ ./mystaticexe
+
+
+For dynamic linking:
+/assinment2/dynamiclib$ gcc -c -fPIC *.c
+/assinment2/dynamiclib$ gcc -shared *.o -o libmyfuncs.so
+/assinment2/dynamiclib$ cd ..
+/assinment2$ gcc -c main.c
+/assinment2$ gcc main.o -o mydynamicexe -lmyfuncs -L dynamiclib/
+/assinment2$ ./mydynamicexe
+
