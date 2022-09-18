@@ -1,2 +1,2 @@
 
-This Repositories is dedicated for all embedded linux course assignments
+This Repository is dedicated for all embedded linux course assignments
