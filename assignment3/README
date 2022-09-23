@@ -1,0 +1,11 @@
+to run the program while linking it statically :
+
+	$ make mystaticexe
+	
+to run the program while linking it dinamically :
+
+	$ make mydynamicexe
+	
+to remove all generated .o files :
+
+	$make clean
