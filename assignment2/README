@@ -1,3 +1,6 @@
+
+#process to make static & Dynamic libraries then link and excute program
+
 For static linking:
 
 /assinment2/staticlib$ gcc -c *.c
@@ -9,10 +12,9 @@ For static linking:
 
 
 For dynamic linking:
-/assinment2/dynamiclib$ gcc -c -fPIC *.c
-/assinment2/dynamiclib$ gcc -shared *.o -o libmyfuncs.so
+/assinment2/dynamiclib$ gcc -shared -fpic -o libmyfuncs.so *.c
+/assinment2/dynamiclib$ mv libmyfuncs.so ../
 /assinment2/dynamiclib$ cd ..
-/assinment2$ gcc -c main.c
-/assinment2$ gcc main.o -o mydynamicexe -lmyfuncs -L dynamiclib/
+/assinment2$ gcc -o mydynamicexe main.c ./libmyfuncs.so
 /assinment2$ ./mydynamicexe
 
