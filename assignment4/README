@@ -1,0 +1,18 @@
+
+To build: 
+	./assignment4$ make
+	
+	
+example on commands:
+
+echo ->  
+	./assignment4$ ./build/femto4 echo <your arguments>
+
+pwd ->  
+	./assignment4$ ./build/femto4 pwd
+
+cp ->  
+	./assignment4$ ./build/femto4 cp <source> <destination>
+	
+mv ->
+	./assignment4$ ./build/femto4 mv <source> <destination>
