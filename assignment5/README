@@ -1,0 +1,15 @@
+
+To build: 
+	assignment5$ make
+	
+	
+To excute :
+	assignment5$ ./build/simpleshell
+	
+supported commands:
+1. all system builtin commands
+2. echo $<environment variable>
+3. assigning local variables , example $ x=5
+4. set : view all local commands through "set" command, example : $ set
+5. export : export local variable to global environment, example: $ export <local var>
+
